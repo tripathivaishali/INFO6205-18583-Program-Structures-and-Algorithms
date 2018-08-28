@@ -52,7 +52,11 @@ public class Newton {
     public static void main(String[] args) {
 
         // Build the Newton's Approximation problem to be solved: cos(x) = x
+        
+        
+       //----------------------Changes Start Here----------------------------------//
         Newton newton = new Newton("tan(x)", (double x) -> Math.tan(x), (double x) -> Math.pow((1/Math.cos(x)),2));
+        //----------------------Changes End Here----------------------------------//
 
         // Solve the problem starting with a value of x = 1;
         // requiring a precision of 10^-7;
